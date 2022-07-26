@@ -4,7 +4,22 @@ import "./signup.css"
 
 const Signup = () =>{
 
-    const [user , setUser] = useState()
+    const [user , setUser] = useState([])
+    
+    const handleForm= (e) => {
+        const { name, value } = e.target;
+        setUser({ ...user, [name]: value })
+    }
+
+    const handleSubmit = async (event) => {
+        console.log(user)
+        await fetch(`http://localhost:8080/users`, {
+            method: "POST",
+            body: JSON.stringify(user),
+            headers: { "content-type": "application/json" }
+        })
+        alert("Sign up Successfull");
+    }
 
     return (
        
@@ -18,15 +33,18 @@ const Signup = () =>{
         <div className="loginRight">
         <div className="loginBox">
             <form>
-            <input placeholder="Fullname" type="text" name='fullname' className="loginInput" />
-            <input placeholder="Email" type="email" name='email' className="loginInput" />
-            <input placeholder="Password" type="password" name='password' className="loginInput" />
-            <input placeholder="Phone no.." type="tel" name='date' className="loginInput" /><br></br>
-            <input placeholder='DOB'type="Date" name='dateofbirth' className='loginInput'/><br></br>
-            <button className="loginButton">Sign Up</button>
+            <input onChange={handleForm} placeholder="Fullname" type="text" name='name' className="loginInput" />
+            <input onChange={handleForm} placeholder="Email" type="email" name='email' className="loginInput" />
+            <input onChange={handleForm} placeholder="Password" type="password" name='password' className="loginInput" />
+            <input onChange={handleForm} placeholder="Phone no.." type="tel" name='phone' className="loginInput" /><br></br>
+            <input onChange={handleForm} placeholder='Gender' type="text" name='gender' className='loginInput'/><br></br>
+            <input onChange={handleForm} placeholder='DOB' type="Date" name='dob' className='loginInput'/><br></br>
+            <input onChange={handleForm} placeholder='image' name='image' className='loginInput'/>
+
+            <button onClick={()=>handleSubmit()} className="loginButton">Sign Up</button>
             <button  className="loginRegisterButton">
             Log into Account
-            </button></form>
+            </button> </form>
             
           </div>
         </div>
