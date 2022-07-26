@@ -1,0 +1,43 @@
+1. use Camel caseing..
+2. use port 8080 for json server..
+3. folder structure --> feature based.
+4. 
+
+
+webpage :-
+
+navbar --> Home login profile + name + profile photo
+
+homepage -> all post + create post + like (in posted card) + 
+            scroll up button (position sticky);
+
+signup -->  name email password confirm password phone dob gender;
+login --> email password 
+profile -->
+
+
+
+
+
+
+1. if logged in ---> home page
+   if not logged in ---> login page (link to signup if new user)
+
+   after logged out --> login page
+
+   home page--> all post by users
+
+
+
+
+
+   db.json --> 
+
+   users -> all details ;
+   post --> (name,image + text,like count + dateposted); // for now NO track of post 
+            done by specific users;
+
+sudeshna + srujami --> login signup;
+shreyas --> navbar;
+aalesh+ aditya --> create post and home page
+part+ sampradha --> profile page;
