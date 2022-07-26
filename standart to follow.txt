@@ -41,3 +41,7 @@ sudeshna + srujami --> login signup;
 shreyas --> navbar;
 aalesh+ aditya --> create post and home page
 part+ sampradha --> profile page;
+
+
+
+to kill a port:-  kill $(lsof -t -i:8080)
