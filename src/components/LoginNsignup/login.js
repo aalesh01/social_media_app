@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate }  from 'react-router-dom';
 
+import "./signup.css"
 const Login = () => {
   const [user , setUser] = useState([]);
   const [loginUser,setLoginUser] = useState({});
   let navigate=useNavigate();
     
- const getUser = ()=>{
+
+
+   
+
+  useEffect( ()=>{
        fetch(`http://localhost:8080/users`)
        .then (res=>res.json())
        .then (res=>setUser(res))
-  }
-
-  useEffect(getUser, []);
+       console.log(user);
+  }, []);
 
   const handleForm= (e) => {
     const { name, value } = e.target;
@@ -36,8 +40,8 @@ const Login = () => {
     <div className='login'>
         <div className="loginWrapper">
             <div className="loginLeft">
-                <h3 className="loginLogo">Socilia</h3>
-                <span className="loginDesc">connect with friends and the world around you Socilia.</span>
+                <h3 className="loginLogo">Social Tree</h3>
+                <span className="loginDesc">connect with friends and the world around you :D</span>
             </div>
         <div className="loginRight">
         <div className="loginBox">
@@ -48,6 +52,7 @@ const Login = () => {
             <button  className="loginRegisterButton">
               Create a New Account
             </button>
+            
           </div>
         </div>
       </div>

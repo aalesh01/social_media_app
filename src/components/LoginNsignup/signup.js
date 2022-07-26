@@ -39,7 +39,7 @@ const Signup = () =>{
             <input onChange={handleForm} placeholder="Phone no.." type="tel" name='phone' className="loginInput" /><br></br>
             <input onChange={handleForm} placeholder='Gender' type="text" name='gender' className='loginInput'/><br></br>
             <input onChange={handleForm} placeholder='DOB' type="Date" name='dob' className='loginInput'/><br></br>
-            <input onChange={handleForm} placeholder='image' name='image' className='loginInput'/>
+            <input onChange={handleForm} placeholder='image' name='image' className='loginInput'/><br></br>
 
             <button onClick={()=>handleSubmit()} className="loginButton">Sign Up</button>
             <button  className="loginRegisterButton">
