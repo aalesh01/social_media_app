@@ -42,10 +42,6 @@
     background-color: #0072E5;
     box-shadow: 0 0 8px 0 #3698fb;
 }
-span{
-    padding: 10px;
-    font-size: 0.8em;
-}
 
 
 .log-btn{
@@ -66,14 +62,16 @@ span{
     background-color: aliceblue;
 
 }
-span{
+
+.nav-ele{
     padding: 10px;
     font-size: 0.8em;
+    color: black;
 }
 
-span:hover{
+.nav-ele:hover{
     color: #007FFF;
-    font-weight: 700;
+    font-weight: 600;
     
 }
 
@@ -82,11 +80,11 @@ span:hover{
     flex: 1;
     align-items: center;
     max-width: fit-content;
-    padding: 20px;
+    padding: 10px;
     height: 30px;
     border-radius: 50px;
     box-shadow: 0 0 5px 0 rgba(128, 128, 128, 0.348);
-
+    
 }
 
 
@@ -129,6 +127,7 @@ img{
     -webkit-text-fill-color: transparent;
     font-style: italic;
     padding-right: 3px; 
+    
 
 }
 
