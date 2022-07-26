@@ -5,7 +5,7 @@ import NavBar from './components/navbar/NavBar';
 import Homepage from './components/home/homepage';
 import {Routes, Route}  from 'react-router-dom';
 import Login from './components/LoginNsignup/login';
-import HomePage from './components/home/homepage';
+//import HomePage from './components/home/homepage';
 
 function App() {
   return (
