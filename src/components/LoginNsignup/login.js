@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import { useNavigate }  from 'react-router-dom';
+
 import "./signup.css"
 import profile from "./uid.png"
 const Login = () => {
-  const [user , setUser] = useState([])
+  const [user , setUser] = useState([]);
+  const [loginUser,setLoginUser] = useState({});
+  let navigate=useNavigate();
     
 
 
@@ -15,15 +19,23 @@ const Login = () => {
        console.log(user);
   }, []);
 
-  const handleSubmit = async (event) => {
-      console.log(user)
-      await fetch(`http://localhost:8080/users`, {
-          method: "POST",
-          body: JSON.stringify(user),
-          headers: { "content-type": "application/json" }
+  const handleForm= (e) => {
+    const { name, value } = e.target;
+    setLoginUser({...loginUser,[name]: value});
+    
+}
+
+  const handleSubmit =  () => {
+      user.map(ele=>{
+         if(ele.email===loginUser.email && ele.password===loginUser.password){
+          alert("Sign in Successfull");
+          navigate('/');
+         }
+          else{ 
+            // alert("Invalid user");
+        }
       })
-      console.log(user)
-      alert("Sign up Successfull");
+      
   }
   return (
     <div className='login'>
@@ -34,19 +46,9 @@ const Login = () => {
             </div>
         <div className="loginRight">
         <div className="loginBox">
-
-        <div className='imgs'>
-            <div className='img-container'>
-              <img src={profile} alt='profile' className='profile'/>
-
-
-            </div>
-            </div>
-
-
-            <input placeholder="Email"  type="email"  required className="loginInput" />
-            <input placeholder="Password"  type="password" className="loginInput" />
-            <button  className="loginButton">Log In</button>
+            <input onChange={handleForm} placeholder="Email" name='email'  type="email"  required className="loginInput" />
+            <input onChange={handleForm} placeholder="Password" name='password' type="password" className="loginInput" />
+            <button onClick={()=>handleSubmit()} className="loginButton">Log In</button>
             <span className="loginForgot">Forgot Password?</span>
             <button  className="loginRegisterButton">
               Create a New Account

@@ -27,7 +27,7 @@ const CreatePost = () => {
 
   return (
  <div className='postForm'>
-  <Heading>Create a post</Heading>
+  <Heading>Create a Post</Heading>
  <FormControl colorScheme='blackAlpha' isRequired>
   <FormLabel>Name</FormLabel>
   <Input onChange={handleForm} name="name" type='text' />
