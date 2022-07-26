@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./signup.css"
+import profile from "./uid.png"
 const Login = () => {
   const [user , setUser] = useState([])
     
@@ -33,6 +34,16 @@ const Login = () => {
             </div>
         <div className="loginRight">
         <div className="loginBox">
+
+        <div className='imgs'>
+            <div className='img-container'>
+              <img src={profile} alt='profile' className='profile'/>
+
+
+            </div>
+            </div>
+
+
             <input placeholder="Email"  type="email"  required className="loginInput" />
             <input placeholder="Password"  type="password" className="loginInput" />
             <button  className="loginButton">Log In</button>
