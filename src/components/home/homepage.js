@@ -1,9 +1,18 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 
 const HomePage = () => {
-    const [posts, setposts] = useState([]);
+    const [posts, setPosts] = useState([]);
+    
+ 
+   useEffect(()=>{
+        fetch(`http://localhost:8080/posts`)
+        .then (res=>res.json())
+        .then (res=>setPosts(res))
+        console.log(posts);
+   }, []);
+
   return (
-    <div>HomePage</div>
+    <div>H</div>
   )
 }
 
