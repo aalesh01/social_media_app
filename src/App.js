@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import CreatePost from './components/post /createpost';
+import Signup from './components/LoginNsignup/signup';
+import Login from './components/LoginNsignup/login';
+
 
 function App() {
   return (
-    <div className="App">
-      <CreatePost/>
-    </div>
+    <>
+ {/* <Signup/> */}
+ <Login/>
+    </>
   );
 }
 
