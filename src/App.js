@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="App">
        <NavBar/> 
-      <Routes>
+      {/* <Routes>
       <Route path="/login" element={<Login/>}/>
-      </Routes>
+      </Routes> */}
       <Homepage/>
     </div>
   );

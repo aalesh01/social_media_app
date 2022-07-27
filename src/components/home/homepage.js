@@ -44,10 +44,9 @@ export default function Homepage() {
     <div>
     <div className='home-card'>
       {
-        posts.map(ele=>{
-          <Card img title={ele.name} src ={ele.image} description={ele.text}/>
-        })
-      
+        posts.map(ele=>(
+          <Card title={ele.name} img src ={ele.image} description={ele.text}/>
+        ))
       }
       
     </div>

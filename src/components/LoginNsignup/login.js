@@ -26,7 +26,7 @@ const Login = () => {
 }
 
   const handleSubmit =  () => {
-      user.map(ele=>{
+      user.forEach(ele=>{
          if(ele.email===loginUser.email && ele.password===loginUser.password){
           alert("Sign in Successfull");
           navigate('/');
