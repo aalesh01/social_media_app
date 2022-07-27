@@ -9,9 +9,11 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import login from "../LoginNsignup/login";
 
-function NavBar() {
+function NavBar({isAuth,setIsAuth}) {
 
-    const [isAuth, setIsAuth] = useState(false)
+    
+
+
 
     return (
 
@@ -34,7 +36,7 @@ function NavBar() {
                 <span className='nav-ele'><Link to = '/'>Home</Link></span>
                 <span className='nav-ele'><Link to = '/'>Profile</Link></span>
                 <span className='nav-ele'><Link to = '/'>Settings</Link></span>
-                <button className='create-btn'>Create</button>
+                <Link to='/post'><button className='create-btn'>Create</button></Link>
                 
             
             </nav>

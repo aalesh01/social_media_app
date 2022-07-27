@@ -22,9 +22,7 @@ const CreatePost = () => {
     }
 
 
-    
-
-
+  
   return (
  <div className='postForm'>
   <Heading>Create a Post</Heading>
