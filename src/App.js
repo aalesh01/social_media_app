@@ -3,18 +3,28 @@ import './App.css';
 import CreatePost from './components/post /createpost';
 import NavBar from './components/navbar/NavBar';
 import Homepage from './components/home/homepage';
-import {Routes, Route}  from 'react-router-dom';
+import {Routes, Route, Switch}  from 'react-router-dom';
 import Login from './components/LoginNsignup/login';
-//import HomePage from './components/home/homepage';
+import Signup from './components/LoginNsignup/signup';
+import { useState } from 'react';
 
 function App() {
+
+  const [isAuth, setIsAuth] = useState(true);
+
   return (
     <div className="App">
-       <NavBar/> 
-      {/* <Routes>
-      <Route path="/login" element={<Login/>}/>
-      </Routes> */}
-      <Homepage/>
+       <NavBar isAuth={isAuth} setIsAuth={setIsAuth} /> 
+        
+
+      <Routes>
+
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/signup" element={<Signup/>}/>
+        {/* <Route path='/' element={isAuth ? <Homepage/> : <Login/>}/>  */}
+        <Route path='/' element={<Homepage/>}/>
+        <Route path='/post' element={<CreatePost/>}/>
+      </Routes>
     </div>
   );
 }

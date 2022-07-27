@@ -9,9 +9,11 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import login from "../LoginNsignup/login";
 
-function NavBar() {
+function NavBar({isAuth,setIsAuth}) {
 
-    const [isAuth, setIsAuth] = useState(false)
+    
+
+
 
     return (
 
@@ -27,20 +29,23 @@ function NavBar() {
                 <div className='app-name'><h1 className='logo'>SOCIAL TREE</h1></div>
             </Link>
             </div>
+            
+            <div className='head-center'>
             <nav className = "header_center">
                 
                 <span className='nav-ele'><Link to = '/'>Home</Link></span>
                 <span className='nav-ele'><Link to = '/'>Profile</Link></span>
                 <span className='nav-ele'><Link to = '/'>Settings</Link></span>
-                <button className='create-btn'></button>
+                <Link to='/post'><button className='create-btn'>Create</button></Link>
                 
-               {/* <input 
-               type = "text" /> */}
-               {/* <SearchIcon /> */}
+            
             </nav>
+            </div>
+            
             <div className = "header_right">
                 { isAuth ? null :
-                <button  className='reg-btn'>Signup</button> }
+                <span><Link to = '/signup'>
+                <button  className='reg-btn'>Signup</button> </Link></span>}
                 <span><Link to = '/login'>
                     <button className='log-btn'>{isAuth ? "logout" : "login"}</button>
                     </Link></span>
