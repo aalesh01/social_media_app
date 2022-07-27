@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate }  from 'react-router-dom';
+import Signup from './signup';
 
 import "./login.css"
 import profile from "./uid.png"
@@ -8,7 +9,10 @@ const Login = () => {
   const [user , setUser] = useState([]);
   const [loginUser,setLoginUser] = useState({});
   let navigate=useNavigate();
-    
+   
+  useEffect(()=>{
+    localStorage.setItem('isuser',loginUser);
+  },[]);
 
 
    

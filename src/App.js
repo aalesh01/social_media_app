@@ -7,11 +7,14 @@ import Homepage from './components/home/homepage';
 import {Routes, Route, Switch}  from 'react-router-dom';
 import Login from './components/LoginNsignup/login';
 import Signup from './components/LoginNsignup/signup';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
 
-  const [isAuth, setIsAuth] = useState(true);
+  
+ const[isAuth,setIsAuth] = useState(false);
+ 
+
 
   return (
     <div className="App">
