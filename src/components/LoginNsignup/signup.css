@@ -1,7 +1,7 @@
 .login {
     width: 100vw;
     height: 100vh;
-    background-color: #b0d2f4;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,6 +26,7 @@
     font-weight: 800;
     color: #1775ee;
     margin-bottom: 10px;
+    text-align: left;
   }
   
   .loginDesc {
@@ -40,7 +41,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: 14px 11px 12px 9px rgb(126, 121, 121);
+      
   }
   
   .loginInput{
@@ -113,4 +114,8 @@
   .formcss{
     justify-content: center;
     text-align: center;
+  }
+
+  .reg-image{
+    width: 45vw;
   }

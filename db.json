@@ -148,7 +148,20 @@
       "image": "https://picsum.photos/200/300",
       "text": "Enjoyed visiting here..",
       "id": 1
+    },
+    {
+      "like_count": 0,
+      "name": "Shreyas",
+      "image": "https://images.unsplash.com/photo-1599834562135-b6fc90e642ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+      "text": "Hello",
+      "id": 2
+    },
+    {
+      "like_count": 0,
+      "name": "Ritesh",
+      "image": "https://images.unsplash.com/photo-1615803795804-06a0c2a0030e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+      "text": "Best Web Developer",
+      "id": 3
     }
-   
   ]
 }

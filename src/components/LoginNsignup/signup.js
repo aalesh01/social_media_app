@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import "./signup.css"
 import profile from "./uid.png"
-
-
+import regis from "../LoginNsignup/regis.jpg"
 const Signup = () =>{
 
     const [user , setUser] = useState([])
@@ -30,6 +29,7 @@ const Signup = () =>{
             <div className="loginLeft">
                 <h3 className="loginLogo">Social Tree</h3>
                 <span className="loginDesc">connect with friends and the world around you :D</span>
+                <img className='reg-image' src={regis}></img>
             </div>
         <div className="loginRight">
         <div className="loginBox">
