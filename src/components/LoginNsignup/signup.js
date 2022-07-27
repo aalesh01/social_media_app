@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./signup.css"
+import profile from "./uid.png"
 
 
 const Signup = () =>{
@@ -32,7 +33,16 @@ const Signup = () =>{
             </div>
         <div className="loginRight">
         <div className="loginBox">
-            <form>
+
+        <div className='imgs'>
+            <div className='img-container'>
+              <img src={profile} alt='profile' className='profile'/>
+
+
+            </div>
+            </div>
+
+            <form className='formcss'>
             <input onChange={handleForm} placeholder="Fullname" type="text" name='name' className="loginInput" />
             <input onChange={handleForm} placeholder="Email" type="email" name='email' className="loginInput" />
             <input onChange={handleForm} placeholder="Password" type="password" name='password' className="loginInput" />

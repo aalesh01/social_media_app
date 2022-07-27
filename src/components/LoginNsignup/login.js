@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate }  from 'react-router-dom';
 
 import "./signup.css"
+import profile from "./uid.png"
 const Login = () => {
   const [user , setUser] = useState([]);
   const [loginUser,setLoginUser] = useState({});
