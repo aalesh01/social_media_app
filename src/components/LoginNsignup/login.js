@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate }  from 'react-router-dom';
+import Signup from './signup';
 
 import "./signup.css"
 import profile from "./uid.png"
@@ -7,7 +8,10 @@ const Login = () => {
   const [user , setUser] = useState([]);
   const [loginUser,setLoginUser] = useState({});
   let navigate=useNavigate();
-    
+   
+  useEffect(()=>{
+    localStorage.setItem('isuser',loginUser);
+  },[]);
 
 
    
@@ -50,7 +54,7 @@ const Login = () => {
             <input onChange={handleForm} placeholder="Password" name='password' type="password" className="loginInput" />
             <button onClick={()=>handleSubmit()} className="loginButton">Log In</button>
             <span className="loginForgot">Forgot Password?</span>
-            <button  className="loginRegisterButton">
+            <button  className="loginRegisterButton" onClick={Signup}>
               Create a New Account
             </button>
             
