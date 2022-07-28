@@ -1,0 +1,187 @@
+.login1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  
+  .loginWrapper1 {
+    width: 80%;
+    height: 70%;
+    display: flex;
+
+   
+  }
+  
+  .loginLeft1,
+  .loginRight1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  
+  .loginLogo1 {
+    font-size: 1.3em;
+    font-weight: 800;
+    color: #1775ee;
+    margin-top: 80px;
+    margin-right: 253px;
+  }
+  
+  .loginDesc1{
+    font-size: 0.8em;
+    margin-right: 278px;
+    color: grey;
+    margin-top: 10px;
+  }
+
+  .regis-img{
+    width: 40vw;  
+  }
+
+  .loginLeft1{
+    
+    background: #1774ee2e;
+    height: 600px;
+    
+  }
+  
+  .loginBox1{
+      height: 600px;
+      padding: 40px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      
+  }
+  
+  .loginInput1{
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(128, 128, 128, 0.558);
+      font-size: 18px;
+      padding-left: 20px;
+      margin: 6px;
+      
+      
+  }
+
+  .loginInput1::placeholder{
+    font-size: 0.8em;
+  }
+
+  .login-label1{
+    margin-right: 470px;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: rgb(99, 99, 99);
+  }
+
+  .login-label2{
+    margin-right: 440px;
+    padding-top: 20px;
+    font-size: 1.1em;
+    color: rgb(99, 99, 99);
+    font-weight: 500;
+    
+  }
+  
+  .loginInput1:focus{
+      outline: none;
+  }
+  
+  .loginButton1{
+
+      width: 500px;
+      border-radius: 12px;
+      border: none;
+      background-color: #1170ec;
+      color: white;
+      font-size: 1.2em;
+      font-weight: 600;
+      cursor: pointer;
+      margin: 10px;
+      padding: 18px;
+      margin-top: 40px;
+
+      
+      
+  }
+
+  .loginButton1:hover{
+    border: 1px solid  #1170ec;
+    color: #1170ec;
+    background-color: aliceblue;
+   
+  }
+  
+  .loginForgot1{
+      text-align: center;
+      color: #1775ee;
+  }
+  
+  .loginRegisterButton1{
+    width: 500px;
+    border-radius: 12px;
+    border: 1px solid  #1170ec;
+    color: #1170ec;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px;
+    padding: 18px;
+  }
+
+  .loginRegisterButton1:hover{
+    background-color: #1170ec;
+      color: white;
+      
+  }
+
+
+
+
+
+.reg-text{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items:flex-start;
+    margin-top: 220px;
+}
+
+.reg-p1{
+    color: rgba(128, 128, 128, 0.613);
+    font-size: 0.6em;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.reg-p2{
+    color: rgba(128, 128, 128, 0.613);
+    font-size: 0.7em;
+    font-weight: 600;
+    
+}
+
+.reg-head{
+    font-weight: 700;
+    font-size: 3em;
+    color: #0b4797;
+    padding-bottom: 8px;
+}
+.reg-span{
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #0b4797;
+    padding-left: 5px;
+}
+

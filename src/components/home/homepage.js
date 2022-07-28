@@ -4,7 +4,7 @@ import Card from './Card'
 import './Homepage.css'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import { Button } from '@chakra-ui/react';
-import { elementAcceptingRef } from '@mui/utils';
+// import { elementAcceptingRef } from '@mui/utils';
 
 export default function Homepage() {
    
@@ -64,7 +64,10 @@ export default function Homepage() {
           <>
           <Card key={ele.id} title={ele.name} img src ={ele.image} description={ele.text}
           />
-          <input onChange={handleForm} name='comment' placeholder='add a comment' type="text" />
+          <div className='comment-div'>
+            <input className='input-comment' onChange={handleForm} name='comment' placeholder='add a comment' type="text" />
+            <Button className='comment-btn' onClick={()=>handleSubmit(ele.id,ele.comments)} >Comment</Button>
+          </div>
           <div id='commentSection'>
             {
           
@@ -74,7 +77,7 @@ export default function Homepage() {
              ))
             }
           </div>
-          <Button onClick={()=>handleSubmit(ele.id,ele.comments)} >comment</Button>
+          
 
           </>
         ))

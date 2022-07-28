@@ -1,3 +1,4 @@
+
 import logo from './logo.svg';
 import './App.css';
 import Signup from './components/LoginNsignup/signup';
@@ -27,12 +28,13 @@ function App() {
 
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>
-        <Route path='/' element={isAuth ? <Homepage/> : <Login/>}/> 
+        <Route path='/' element={ <Homepage/>}/> 
         <Route path="/post" element={<CreatePost/>}/>
+        <Route path="/profile" element={<Profile/>}/>
 
       
       </Routes>
-      <Profile/>
+  
     </div>
   );
 }

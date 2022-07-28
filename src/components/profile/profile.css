@@ -1,13 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-   
-    
-}
 
-
-
- 
 .prof-head{
     font-size: 2em;
     padding-top: 80px;
@@ -23,17 +14,16 @@
   height:900px;
   margin-left: 40px;
   margin-top: 40px;
-  border-radius: 180px;
+  border-radius: 200px;
   box-shadow: 0 0 10px 1px #2222221c ;
-
     
 } 
 
 
 .prof-image{
-    width: 250px;
+    width: 220px;
     border-radius: 50%;
-    height: 250px;
+    height: 220px;
     border: 5px solid white ;
     
 }
@@ -107,7 +97,12 @@
     color: aliceblue;
     font-weight: 700;
     margin-top: 10px;
+    border: none;
 
+}
+
+.edit-btn:hover{
+    background-color: #11283f;
 }
 
 .span-info{
