@@ -40,7 +40,7 @@ function NavBar() {
                     </Link></span>
                 
                
-              <img className='nav-dp' src='https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80'></img>
+              <img className='nav-dp' src={localStorage.getItem("dp")}></img>
              
              </div>
         </div>

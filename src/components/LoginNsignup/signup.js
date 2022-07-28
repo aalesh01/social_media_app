@@ -4,6 +4,7 @@ import profile from "./uid.png"
 import reg1 from "../LoginNsignup/reg1.png"
 import reg2 from "../LoginNsignup/reg2.png"
 import reg3 from "../LoginNsignup/reg3.png"
+
 const Signup = () =>{
 
     const [user , setUser] = useState([])
@@ -23,10 +24,11 @@ const Signup = () =>{
         alert("Sign up Successfull");
     }
 
+
     return (
        
         <>
-         <div className='login'>
+         <form className='login'>
         <div className="loginWrapper">
             <div className="loginLeft">
                 <h3 className="loginLogo">Social Tree.</h3>
@@ -57,31 +59,31 @@ const Signup = () =>{
             </div>
             </div>
 
-            <form className='input-fields'>
+            <div className='input-fields'>
 
             <label>Name</label>
-            <input onChange={handleForm} placeholder="Fullname" type="text" name='name' className="loginInput" />
+            <input onChange={handleForm}  placeholder="Fullname" type="text" name='name' className="loginInput" required/>
             <label>Email</label>
-            <input onChange={handleForm} placeholder="Email" type="email" name='email' className="loginInput" />
+            <input onChange={handleForm} placeholder="Email" type="email" name='email' className="loginInput" required/>
             <label>Password</label>
-            <input onChange={handleForm} placeholder="Password" type="password" name='password' className="loginInput" />
+            <input onChange={handleForm} placeholder="Password" type="password" name='password' className="loginInput" required/>
             <label>Phone</label>
-            <input onChange={handleForm} placeholder="Phone no.." type="tel" name='phone' className="loginInput" />
+            <input onChange={handleForm} placeholder="Phone no.." type="tel" name='phone' className="loginInput" required/>
             <label>Gender</label>
-            <input onChange={handleForm} placeholder='Gender' type="text" name='gender' className='loginInput'/>
+            <input onChange={handleForm} placeholder='Gender' type="text" name='gender' className='loginInput'required/>
             <label>Date of Birth</label>
-            <input onChange={handleForm} placeholder='Select your DOB' type="Date" name='dob'  className='loginInput'/>
+            <input onChange={handleForm} placeholder='Select your DOB' type="Date" name='dob'  className='loginInput'required/>
             <label>Profile Picture</label>
-            <input onChange={handleForm} placeholder='Insert your image url' name='image' className='loginInput'/>
+            <input onChange={handleForm} placeholder='Insert your image url' name='image' className='loginInput'required/>
 
             <button onClick={()=>handleSubmit()} className="loginButton2">Sign Up</button>
             
-            </form>
+            </div>
             
           </div>
         </div>
       </div>
-    </div>
+    </form>
         
         </>
 

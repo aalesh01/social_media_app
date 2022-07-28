@@ -32,7 +32,7 @@ const CreatePost = () => {
   <Input onChange={handleForm} name="name" type='text' />
   <FormLabel>Image Link</FormLabel>
   <Input onChange={handleForm} name="image" type='text' />
-  <FormLabel>Write a post</FormLabel>
+  <FormLabel>Caption</FormLabel>
   <Input onChange={handleForm} name="text" type='text' />
   <Button onClick={()=>handleSubmit()} >Post</Button>
 </FormControl>

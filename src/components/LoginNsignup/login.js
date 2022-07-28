@@ -52,10 +52,10 @@ const Login = () => {
           </div>
         <form className="loginBox1">
             <label className='login-label1'>Email</label>
-            <input onChange={handleForm} placeholder="Email" name='email'  type="email"  required className="loginInput1" />
+            <input onChange={handleForm} placeholder="Email" name='email'  type="email" className="loginInput1" required/>
             <label className='login-label2'>Password</label>
-            <input onChange={handleForm} placeholder="Password" name='password' type="password" className="loginInput1" />
-            <button onClick={()=>handleSubmit()} className="loginButton1">Log In</button>
+            <input onChange={handleForm} placeholder="Password" name='password' type="password" className="loginInput1" required/>
+            <button type='submit' onClick={()=>handleSubmit()} className="loginButton1">Log In</button>
             
             <button  className="loginRegisterButton1">
               Create a New Account
