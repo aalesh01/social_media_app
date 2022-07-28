@@ -21,8 +21,8 @@
     z-index: 100;
     width: 100%;
     padding: 20px;
-    background-color: black;
-    box-shadow: 0 0 5px 0 rgba(128, 128, 128, 0.348);
+    background-color: rgb(41, 41, 41);
+    box-shadow: 0 1px 5px 3px rgba(128, 128, 128, 0.348);
 }
 
 
@@ -119,14 +119,12 @@
     padding-right: 3px; 
 
 }
-img{
-
-    border-radius:50% 50% 50% 50%;  
+.nav-dp{
+    border-radius:50%;  
     width:100px;
-    height:100px;
-    background-size: cover;
-    width: 50px;
-    height: 40px;
+    height:50px;
+    background-size:cover;
+
 }
 
 .create-btn{
@@ -151,8 +149,3 @@ img{
    
 }
 
-.dp{
-    border:2px solid white;
-    border-radius: 50%;
-    
-}

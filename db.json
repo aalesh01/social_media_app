@@ -1,29 +1,14 @@
 {
   "users": [
     {
-      "name": "sudeshna",
-      "email": "sudeshna@gmail.com",
-      "password": "123445676788",
-      "phone": "1234567889",
-      "dob": "2022-06-30",
-      "id": 5
-    },
-    {
-      "name": "srujami",
+      "name": "Srujami",
       "email": "srujami@gmail.com",
       "password": "1234567890",
       "phone": "1234567890",
       "dob": "2022-06-28",
-      "id": 6
-    },
-    {
-      "name": "sudeshna",
-      "email": "sudeshna@gmail.com",
-      "password": "123456789",
-      "phone": "123456789",
-      "gender": "female",
-      "dob": "2022-07-01",
-      "id": 7
+      "gender": "Male",
+      "id": 6,
+      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80"
     },
     {
       "name": "sudeshna",
@@ -32,80 +17,47 @@
       "phone": "876876",
       "gender": "female",
       "dob": "2022-07-15",
-      "image": "\"https://media-exp1.licdn.com/dms/image/C5603AQF27MgOZz93WA/profile-displayphoto-shrink_100_100/0/1633719464380?e=1664409600&v=beta&t=pMuuFthHhAQ9Qk6Go7AmY8HBDNBu6ksHcrDiPzEfg4o\"",
+      "image": "https://media-exp1.licdn.com/dms/image/C5603AQF27MgOZz93WA/profile-displayphoto-shrink_100_100/0/1633719464380?e=1664409600&v=beta&t=pMuuFthHhAQ9Qk6Go7AmY8HBDNBu6ksHcrDiPzEfg4o\"",
       "id": 8
     },
-    [
-      {
-        "name": "srujami",
-        "email": "srujami@gmail.com",
-        "password": "1234567890",
-        "phone": "1234567890",
-        "dob": "2022-06-28",
-        "id": 6
-      },
-      {
-        "name": "sudeshna",
-        "email": "sudeshna@gmail.com",
-        "password": "123456789",
-        "phone": "123456789",
-        "gender": "female",
-        "dob": "2022-07-01",
-        "id": 7
-      },
-      {
-        "name": "sudeshna",
-        "email": "sudeshna@gmail.com",
-        "password": "657765",
-        "phone": "876876",
-        "gender": "female",
-        "dob": "2022-07-15",
-        "image": "\"https://media-exp1.licdn.com/dms/image/C5603AQF27MgOZz93WA/profile-displayphoto-shrink_100_100/0/1633719464380?e=1664409600&v=beta&t=pMuuFthHhAQ9Qk6Go7AmY8HBDNBu6ksHcrDiPzEfg4o\"",
-        "id": 8
-      },
-      {
-        "name": "srujami",
-        "email": "srujami@gmail.com",
-        "password": "1234567890",
-        "phone": "1234567890",
-        "dob": "2022-06-28",
-        "id": 6
-      },
-      {
-        "name": "sudeshna",
-        "email": "sudeshna@gmail.com",
-        "password": "123456789",
-        "phone": "123456789",
-        "gender": "female",
-        "dob": "2022-07-01",
-        "id": 7
-      },
-      {
-        "name": "sudeshna",
-        "email": "sudeshna@gmail.com",
-        "password": "657765",
-        "phone": "876876",
-        "gender": "female",
-        "dob": "2022-07-15",
-        "image": "\"https://media-exp1.licdn.com/dms/image/C5603AQF27MgOZz93WA/profile-displayphoto-shrink_100_100/0/1633719464380?e=1664409600&v=beta&t=pMuuFthHhAQ9Qk6Go7AmY8HBDNBu6ksHcrDiPzEfg4o\"",
-        "id": 8
-      }
-    ]
+    {
+      "name": "srujami",
+      "email": "srujami@gmail.com",
+      "password": "1234567890",
+      "phone": "1234567890",
+      "dob": "2022-06-28",
+      "gender": "male",
+      "id": 6,
+      "image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+    },
+    {
+      "name": "sudeshna",
+      "email": "sudeshna@gmail.com",
+      "password": "657765",
+      "phone": "876876",
+      "gender": "female",
+      "dob": "2022-07-15",
+      "image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+      "id": 8
+    },
+    []
   ],
   "posts": [
     {
       "name": "Aalesh",
+      "like_count": 1,
       "text": "Just Telling",
       "image": "https://picsum.photos/200/300",
-      "like_count": 46,
-      "id": 1
-    },
-    {
-      "name": "Aaditya",
-      "text": "Just Telling",
-      "image": "https://picsum.photos/200/300",
-      "like_count": 23,
-      "id": 2
+      "id": 1,
+      "date": "",
+      "comments": [
+        "sdfsafdasfd",
+        "hjh",
+        "hgj",
+        "rewqqweqw",
+        "hii",
+        "mast"
+      ]
     }
   ]
 }

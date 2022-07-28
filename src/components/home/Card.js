@@ -36,7 +36,7 @@ import './Card.css';
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ "like_count": likeCount })
         };
-        fetch('http://localhost:3000/posts/'+id, requestOptions)
+        fetch('http://localhost:/posts/'+id, requestOptions)
             .then(response => response.json())
             .then(data => console.log(data.id));
     }, [likeCount])
@@ -49,6 +49,8 @@ import './Card.css';
 
   
   
+
+
 
 
     return (
