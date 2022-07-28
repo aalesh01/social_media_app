@@ -1,41 +1,48 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate }  from 'react-router-dom';
+import { AuthContext } from '../contextAPI/authContext'
+
 
 import "./signup.css"
-import profile from "./uid.png"
 const Login = () => {
-  const [user , setUser] = useState([]);
-  const [loginUser,setLoginUser] = useState({});
+
+  const [user , setUser] = React.useState([]);
+  const [loginUser,setLoginUser] = React.useState({});
+  const [userFound,setUserFound] = React.useState();
   let navigate=useNavigate();
-    
+  const { toggleAuth, isAuth, handleIsAuth } = React.useContext(AuthContext);
+  const toggleUserFound=()=>{
+    setUserFound(!userFound);
+  }
 
 
-   
+  
 
-  useEffect( ()=>{
+  useEffect(()=>{
        fetch(`http://localhost:8080/users`)
        .then (res=>res.json())
        .then (res=>setUser(res))
-       console.log(user);
   }, []);
 
   const handleForm= (e) => {
     const { name, value } = e.target;
     setLoginUser({...loginUser,[name]: value});
-    
 }
 
   const handleSubmit =  () => {
+      setUserFound(false);
       user.forEach(ele=>{
          if(ele.email===loginUser.email && ele.password===loginUser.password){
+          toggleUserFound();
+          console.log(userFound);
           alert("Sign in Successfull");
+          toggleAuth();
           navigate('/');
          }
-          else{ 
-            // alert("Invalid user");
-        }
       })
-      
+      if(userFound===false){
+        alert('Invalid user')
+      }
   }
   return (
     <div className='login'>
@@ -53,7 +60,6 @@ const Login = () => {
             <button  className="loginRegisterButton">
               Create a New Account
             </button>
-            
           </div>
         </div>
       </div>

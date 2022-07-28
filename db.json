@@ -148,7 +148,20 @@
       "image": "https://picsum.photos/200/300",
       "text": "Enjoyed visiting here..",
       "id": 1
+    },
+    {
+      "like_count": 0,
+      "name": "Srujami",
+      "image": "https://picsum.photos/200/300",
+      "text": "HI everyoneeeeeeeee...",
+      "id": 2
+    },
+    {
+      "like_count": 0,
+      "name": "sudeshna",
+      "image": "https://picsum.photos/200/300",
+      "text": "Gooodddd Morninggg!!!!!!!!!!",
+      "id": 3
     }
-   
   ]
 }

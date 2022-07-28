@@ -1,29 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
 import CreatePost from './components/post /createpost';
 import NavBar from './components/navbar/NavBar';
 import Homepage from './components/home/homepage';
-import {Routes, Route, Switch}  from 'react-router-dom';
+import {Routes, Route}  from 'react-router-dom';
 import Login from './components/LoginNsignup/login';
 import Signup from './components/LoginNsignup/signup';
-import { useState } from 'react';
+import { AuthContext } from './components/contextAPI/authContext';
+import React from 'react';
 
 function App() {
+   
+  const { toggleAuth, isAuth, handleIsAuth } = React.useContext(AuthContext);
 
-  const [isAuth, setIsAuth] = useState(true);
 
   return (
     <div className="App">
-       <NavBar isAuth={isAuth} setIsAuth={setIsAuth} /> 
-        
-
-      <Routes>
-
+       <NavBar/> 
+       <Routes>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>
-        {/* <Route path='/' element={isAuth ? <Homepage/> : <Login/>}/>  */}
-        <Route path='/' element={<Homepage/>}/>
-        <Route path='/post' element={<CreatePost/>}/>
+        <Route path='/' element={isAuth ? <Homepage/> : <Login />}/> 
+        <Route path='/post' element={<CreatePost/>} />
+        {/* <Route path='/profile' element={<Profile/>} */}
       </Routes>
     </div>
   );
