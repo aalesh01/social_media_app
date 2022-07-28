@@ -22,14 +22,14 @@ export default function Homepage() {
             body: JSON.stringify({comments:[...comments,...commentArray]}),
             headers: { "content-type": "application/json" }
         })
-        window.location.reload(false)
+        // window.location.reload(false)
     }   
  
   useEffect(()=>{
        fetch(`http://localhost:8080/posts`)
        .then (res=>res.json())
        .then (res=>setPosts(res))
-  }, []);
+  }, [handleSubmit]);
   
     const [visible, setVisible] = useState(false)
     

@@ -71,11 +71,30 @@
     {
       "like_count": 0,
       "date": "2022-07-28",
-      "comments": [],
+      "comments": [
+        "hey",
+        "hey",
+        "hello",
+        "kjni",
+        "dsfsafd",
+        "dsfsafddsfsa",
+        "hi"
+      ],
       "name": "Aalesh Patil",
       "image": "https://picsum.photos/200/300",
       "text": "sdfsadfasdf",
       "id": 3
+    },
+    {
+      "like_count": 0,
+      "date": "2022-07-28",
+      "comments": [
+        "hello!"
+      ],
+      "name": "Sudeshna",
+      "image": "https://images.unsplash.com/photo-1655019680534-0838d2870bfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+      "text": "Peace",
+      "id": 4
     }
   ]
 }
