@@ -33,8 +33,8 @@ function NavBar() {
             <div className = "header_right">
                 
                 
-                <span><Link to = '/signup'>
-                <button  className='reg-btn'>{isAuth ? null : "Signup"} </button> </Link></span>  
+                {isAuth ? null : <span><Link to = '/signup'>
+                <button  className='reg-btn'>Signup</button>   </Link></span>} 
                 <span><Link to = '/login'>
                     {isAuth ? <button onClick={()=>toggleAuth(false)} className='log-btn'>Logout</button>: <button className='log-btn'>Login</button> }
                     </Link></span>
