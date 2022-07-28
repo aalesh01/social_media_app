@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FormControl,FormLabel,Input,FormHelperText, Button,Heading} from '@chakra-ui/react';
 import './createpost.css'
-import { sliderClasses } from '@mui/material';
+
 
 const CreatePost = () => {
   
@@ -14,7 +14,7 @@ const CreatePost = () => {
 
     const handleSubmit = async (event) => {
         console.log(user)
-        await fetch(`http://localhost:3000/posts`, {
+        await fetch(`http://localhost:8080/posts`, {
             method: "POST",
             body: JSON.stringify(user),
             headers: { "content-type": "application/json" }
@@ -22,9 +22,9 @@ const CreatePost = () => {
         alert("Posted");
     }
 
-
   
   return (
+    
  <div className='postForm'>
   <Heading>Create a Post</Heading>
  <FormControl colorScheme='blackAlpha' isRequired>
@@ -36,9 +36,9 @@ const CreatePost = () => {
   <Input onChange={handleForm} name="text" type='text' />
   <Button onClick={()=>handleSubmit()} >Post</Button>
 </FormControl>
-
-    </div>
+</div>
   )
 }
+
 
 export default CreatePost

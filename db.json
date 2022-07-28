@@ -37,7 +37,7 @@
       "phone": "876876",
       "gender": "female",
       "dob": "2022-07-15",
-      "image": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80",
+      "image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
       "id": 8
     },
     {
@@ -63,21 +63,21 @@
   ],
   "posts": [
     {
-      "like_count": 5,
+      "like_count": 9,
       "name": "Srujami",
       "image": "https://picsum.photos/200/300",
-      "text": "Enjoyed visiting here..",
       "id": 1,
-      "date": "",
+      "date": "25th July 2022",
       "comments": [
         "Nice Picture",
         "WOOOOWWWW!!",
         "hi",
-        "heyyy"
+        "heyyy",
+        "aalesh"
       ]
     },
     {
-      "like_count": 0,
+      "like_count": 5,
       "name": "Aalesh",
       "image": "https://picsum.photos/200/300",
       "text": "Enjoyed visiting here..",
@@ -161,15 +161,14 @@
       ]
     },
     {
-      "like_count": 0,
-      "name": "Aalesh",
-      "image": "https://picsum.photos/200/300",
-      "text": "Enjoyed visiting here..",
+      "like_count": 5,
+      "name": "Shreyas Deshmukh",
+      "image": "https://images.unsplash.com/photo-1514416497375-12bed6955a25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1536&q=80",
+      "text": "Zindagi Na Milegi Dobara",
       "id": 2,
-      "date": "",
+      "date": "27th July 2022",
       "comments": [
-        "Nice Picture",
-        "WOOOOWWWW!!"
+        "mast"
       ]
     },
     {

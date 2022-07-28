@@ -26,7 +26,7 @@
     background-color: #383838;
     box-shadow:0 0 1px 0 black;
     color: aliceblue;
-
+    z-index: 2;
 }
 
 .input-comment::placeholder{
@@ -42,5 +42,41 @@
 .comment-div{
     display: flex;
     justify-content: center;
+}
 
+.comment-btn{
+    background-color: #007FFF;
+    color: aliceblue;
+    font-size: 0.8em;
+    font-weight: 700;
+    border-radius: 50px;
+    width: 90px;
+    margin-left: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 2;
+}
+
+.comment-btn:hover{
+    background-color: aliceblue;
+    color: #007FFF;
+    box-shadow: #0080ff59 0px 2px 8px 0px;
+}
+
+#commentSection{
+    background-color: white;
+    padding: 30px;
+    margin-left: 470px;
+    margin-right: 470px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+   color: #383838;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.comment-head{
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.em;
+    color:#383838;
 }

@@ -31,7 +31,6 @@ function NavBar() {
             </div>
             
             <div className = "header_right">
-                {/* { users ? null : }*/}
                 
                 
                 {isAuth ? null : <span><Link to = '/signup'><button  className='reg-btn'>Signup</button></Link></span>  }  

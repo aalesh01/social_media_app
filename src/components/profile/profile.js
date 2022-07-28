@@ -8,7 +8,6 @@ function Profile() {
     const [userPosts,setUserPosts]= useState([]);
 
 
-    
 
     useEffect(() => {
         fetch('http://localhost:8080/users')
@@ -25,6 +24,23 @@ function Profile() {
         })
     },[])
 
+
+
+    // posts.map(ele=>{
+    //     if(ele.name === userdata.name){
+    //       setUserPosts([...userPosts,ele])
+    //     }
+    // })
+
+    // useEffect(()=>{
+    //     fetch('http://localhost:8080/posts')
+    //     .then(res => res.json())
+    //     .then(res=>{
+    //         setPosts(res);
+    //         console.log(posts);
+    //     })
+    // },[])
+
     // posts.forEach(ele=>{
     //     if(ele.name===userdata.name){
     //       setUserPosts([...userPosts,ele])
@@ -37,6 +53,7 @@ function Profile() {
         fetchedValue && setUserdata(fetchedValue.find(v => v.name === localStorage.getItem("loginedUser")));
         // console.log("USERDATA: ",userdata);
     }, [fetchedValue, userdata])
+    
     
 
 return(
