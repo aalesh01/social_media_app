@@ -23,7 +23,7 @@ function NavBar() {
                 
                 <span className='nav-ele'><Link to = '/'>Home</Link></span>
                 <span className='nav-ele'><Link to = '/profile'>Profile</Link></span>
-                <span className='nav-ele'><Link to = '/'>Settings</Link></span>
+                <span className='nav-ele'><Link to = '/setting'>Settings</Link></span>
                 <Link to='/post'><button className='create-btn'>Create</button></Link>
                 
             

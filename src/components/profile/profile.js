@@ -11,7 +11,6 @@ function Profile() {
 
 
     useEffect(() => {
-        getPosts();
         fetch('http://localhost:8080/users')
             .then(res => res.json())
             .then(data => {
@@ -20,25 +19,8 @@ function Profile() {
             });
     }, [])
 
-    
-        const getPosts= async()=>{
-            await fetch(`http://localhost:8080/users`)
-            .then(res => res.json())
-            .then(res => { setPosts(res);
-            console.log(posts)
-            })
-        } 
-
       
     // },[])
-
-    useEffect(()=>{
-        posts && posts.map(ele=>{
-            if(ele.name === userdata.name)
-            setUserPosts([...userPosts,ele])
-          
-      })
-    },[])
 
 
     

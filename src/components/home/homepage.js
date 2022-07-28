@@ -7,10 +7,11 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 // import { elementAcceptingRef } from '@mui/utils';
 
 export default function Homepage() {
+
    
   const [posts, setPosts] = useState([]);
   const [commentArray , setComment] = useState([]);
-    
+
     const handleForm= (e) => {
         const { name, value } = e.target;
         setComment([value])
@@ -28,7 +29,9 @@ export default function Homepage() {
   useEffect(()=>{
        fetch(`http://localhost:8080/posts`)
        .then (res=>res.json())
-       .then (res=>setPosts(res))
+       .then (res=>{
+        setPosts(res.sort((a,b)=>b.id - a.id))
+       })
   }, [handleSubmit]);
   
     const [visible, setVisible] = useState(false)
@@ -53,7 +56,7 @@ export default function Homepage() {
     
     window.addEventListener('scroll', toggleVisible);
 
-
+   
   return (
 
 

@@ -22,8 +22,9 @@ function App() {
         <Route path="/signup" element={<Signup/>}/>
         <Route path='/' element={isAuth ? <Homepage/> : <Login />}/> 
         <Route path='/post' element={<CreatePost/>} />
-        <Route path='/profile' element={ <Profile/> } />
+        <Route path='/profile' element={isAuth ? <Profile/> : alert("Please login")} />
       </Routes>
+  
     </div>
   );
 }

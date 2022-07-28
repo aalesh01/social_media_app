@@ -186,7 +186,7 @@
       ]
     },
     {
-      "like_count": 0,
+      "like_count": 10,
       "date": "2022-07-28",
       "comments": [],
       "name": "Sudeshna",
@@ -195,13 +195,52 @@
       "id": 10
     },
     {
-      "like_count": 0,
+      "like_count": 7,
       "date": "2022-07-28",
       "comments": [],
       "name": "tiger",
       "image": "https://images.unsplash.com/photo-1655019680534-0838d2870bfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
       "text": "try",
       "id": 11
+    },
+    {
+      "like_count": 0,
+      "date": "2022-07-28",
+      "comments": [],
+      "name": "Arun",
+      "image": "https://images.unsplash.com/photo-1581382575275-97901c2635b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+      "text": "Hey there",
+      "id": 12
+    },
+    {
+      "like_count": 12,
+      "date": "2022-07-28",
+      "comments": [
+        "ytryrytryrr"
+      ],
+      "name": "srujami",
+      "image": "https://picsum.photos/200/300",
+      "text": "Testing",
+      "id": 13
+    },
+    {
+      "like_count": 84,
+      "date": "2022-07-28",
+      "comments": [
+        "Handsome",
+        "Handsome",
+        "Handsome",
+        "Handsome",
+        "Handsome",
+        "Handsome",
+        "Handsome",
+        "Handsome",
+        "Handsome"
+      ],
+      "name": "RajeshwariJha",
+      "image": "https://images.unsplash.com/photo-1480429370139-e0132c086e2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80",
+      "text": "Hot",
+      "id": 14
     }
   ]
 }
