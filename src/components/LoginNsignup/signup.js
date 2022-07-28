@@ -4,7 +4,7 @@ import profile from "./uid.png"
 import reg1 from "../LoginNsignup/reg1.png"
 import reg2 from "../LoginNsignup/reg2.png"
 import reg3 from "../LoginNsignup/reg3.png"
-
+import { Link } from 'react-router-dom'
 const Signup = () =>{
 
     const [user , setUser] = useState([])
@@ -59,26 +59,30 @@ const Signup = () =>{
             </div>
             </div>
 
-            <div className='input-fields'>
+            <form  className='input-fields'>
 
             <label>Name</label>
-            <input onChange={handleForm}  placeholder="Fullname" type="text" name='name' className="loginInput" required/>
+            <input required onChange={handleForm} placeholder="Fullname" type="text" name='name' className="loginInput" />
             <label>Email</label>
-            <input onChange={handleForm} placeholder="Email" type="email" name='email' className="loginInput" required/>
+            <input required onChange={handleForm} placeholder="Email" type="email" name='email' className="loginInput" />
             <label>Password</label>
-            <input onChange={handleForm} placeholder="Password" type="password" name='password' className="loginInput" required/>
+            <input required onChange={handleForm} placeholder="Password" type="password" name='password' className="loginInput" />
             <label>Phone</label>
-            <input onChange={handleForm} placeholder="Phone no.." type="tel" name='phone' className="loginInput" required/>
+            <input required onChange={handleForm} placeholder="Phone no.." type="tel" name='phone' className="loginInput" />
             <label>Gender</label>
-            <input onChange={handleForm} placeholder='Gender' type="text" name='gender' className='loginInput'required/>
+            <input required onChange={handleForm} placeholder='Gender' type="text" name='gender' className='loginInput'/>
             <label>Date of Birth</label>
-            <input onChange={handleForm} placeholder='Select your DOB' type="Date" name='dob'  className='loginInput'required/>
+            <input required onChange={handleForm} placeholder='Select your DOB' type="Date" name='dob'  className='loginInput'/>
             <label>Profile Picture</label>
-            <input onChange={handleForm} placeholder='Insert your image url' name='image' className='loginInput'required/>
+            <input required onChange={handleForm} placeholder='Insert your image url' name='image' className='loginInput'/>
 
-            <button onClick={()=>handleSubmit()} className="loginButton2">Sign Up</button>
-            
-            </div>
+            {/* <Link to="/login"> */}
+              <input type="submit" onSubmit={()=>handleSubmit()} className="loginButton2"/>
+              {/* </Link> */}
+            {/* <button  className="loginRegisterButton2">
+            Log in
+            </button>  */}
+            </form>
             
           </div>
         </div>

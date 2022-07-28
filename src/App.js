@@ -9,10 +9,6 @@ import { AuthContext } from './components/contextAPI/authContext';
 import React from 'react';
 import Profile from './components/profile/profile';
 
-
-
-import { useState } from 'react';
-
 function App() {
    
   const { toggleAuth, isAuth, handleIsAuth } = React.useContext(AuthContext);

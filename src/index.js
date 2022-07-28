@@ -8,7 +8,6 @@ import {ChakraProvider,theme} from '@chakra-ui/react';
 import AuthContextBox from './components/contextAPI/authContext';
 // import theme from '@chakra-ui/react';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>

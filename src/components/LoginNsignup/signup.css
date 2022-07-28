@@ -174,10 +174,10 @@
 
   .input-fields{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 500px;
-    z-index: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 500px;
+      z-index: 1;
   }
 
 
