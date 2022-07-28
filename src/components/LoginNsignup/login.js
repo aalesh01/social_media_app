@@ -54,7 +54,7 @@ const Login = () => {
           <div className='reg-text'>
             <p className='reg-p1'>START FOR FREE</p>
           <h1 className='reg-head'>Log in</h1>
-          <p className='reg-p2'>Already a member?<span className='reg-span'>Log in</span></p>
+          <p className='reg-p2'>Not a member?<span className='reg-span'>Sign up</span></p>
           </div>
         <div className="loginBox1">
             <label className='login-label1'>Email</label>
