@@ -16,6 +16,14 @@ function Profile() {
         })
     },[])
 
+
+
+    // posts.map(ele=>{
+    //     if(ele.name === userdata.name){
+    //       setUserPosts([...userPosts,ele])
+    //     }
+    // })
+
     // useEffect(()=>{
     //     fetch('http://localhost:8080/posts')
     //     .then(res => res.json())
@@ -37,6 +45,7 @@ function Profile() {
         fetchedValue && setUserdata(fetchedValue.find(v => v.name === "Srujami"));
         // console.log("USERDATA: ",userdata);
     }, [fetchedValue, userdata])
+    
     
 
 return(

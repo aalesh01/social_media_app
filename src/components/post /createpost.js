@@ -22,9 +22,9 @@ const CreatePost = () => {
         alert("Login Successfull");
     }
 
-
   
   return (
+    
  <div className='postForm'>
   <Heading>Create a Post</Heading>
  <FormControl colorScheme='blackAlpha' isRequired>
@@ -36,9 +36,9 @@ const CreatePost = () => {
   <Input onChange={handleForm} name="text" type='text' />
   <Button onClick={()=>handleSubmit()} >Post</Button>
 </FormControl>
-
-    </div>
+</div>
   )
 }
+
 
 export default CreatePost

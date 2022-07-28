@@ -34,7 +34,8 @@ img{
 
 
 .card:hover {
-    transform: scale(1.07);
+    transform: scale(1.01);
+    z-index: 1;
 }
 
 
@@ -65,5 +66,27 @@ img{
     font-weight: 300;
     margin-top: 8px;
     margin-bottom: 8px;
+
+}
+
+.post-caption{
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.post-user{
+    margin-right: 10px;
+    font-weight: 700;
+    color: black;
+
+}
+
+.user-name{
+   
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    
 
 }
