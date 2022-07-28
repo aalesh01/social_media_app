@@ -18,3 +18,29 @@
     left: 90%;
     z-index: 1;
 }
+
+.input-comment{
+    padding: 12px;
+    width: 250px;
+    border-radius: 50px;
+    background-color: #383838;
+    box-shadow:0 0 1px 0 black;
+    color: aliceblue;
+
+}
+
+.input-comment::placeholder{
+    color: aliceblue;
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+.input-comment:focus{
+    outline: none;
+}
+
+.comment-div{
+    display: flex;
+    justify-content: center;
+
+}

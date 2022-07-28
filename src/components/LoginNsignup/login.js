@@ -1,21 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate }  from 'react-router-dom';
-import { AuthContext } from '../contextAPI/authContext'
+import { AuthContext } from '../contextAPI/authContext';
+import registration from "../LoginNsignup/registration_photo.png"
 
-
-import "./signup.css"
+import "./login.css"
 const Login = () => {
 
   const [user , setUser] = React.useState([]);
   const [loginUser,setLoginUser] = React.useState({});
-  const [userFound,setUserFound] = React.useState();
+
   let navigate=useNavigate();
+  
   const { toggleAuth, isAuth, handleIsAuth } = React.useContext(AuthContext);
-  const toggleUserFound=()=>{
-    setUserFound(!userFound);
-  }
-
-
   
 
   useEffect(()=>{
@@ -30,34 +26,37 @@ const Login = () => {
 }
 
   const handleSubmit =  () => {
-      setUserFound(false);
       user.forEach(ele=>{
          if(ele.email===loginUser.email && ele.password===loginUser.password){
-          toggleUserFound();
-          console.log(userFound);
+          toggleAuth(true);
+          console.log(isAuth)
           alert("Sign in Successfull");
-          toggleAuth();
           navigate('/');
          }
       })
-      if(userFound===false){
-        alert('Invalid user')
-      }
   }
   return (
-    <div className='login'>
-        <div className="loginWrapper">
-            <div className="loginLeft">
-                <h3 className="loginLogo">Social Tree</h3>
-                <span className="loginDesc">connect with friends and the world around you :D</span>
+    <div className='login1'>
+        <div className="loginWrapper1">
+            <div className="loginLeft1">
+                <h3 className="loginLogo1">Social Tree.</h3>
+                <span className="loginDesc1">Grow like a tree</span>
+                <img className='regis-img' src={registration}></img>
             </div>
-        <div className="loginRight">
-        <div className="loginBox">
-            <input onChange={handleForm} placeholder="Email" name='email'  type="email"  required className="loginInput" />
-            <input onChange={handleForm} placeholder="Password" name='password' type="password" className="loginInput" />
-            <button onClick={()=>handleSubmit()} className="loginButton">Log In</button>
-            <span className="loginForgot">Forgot Password?</span>
-            <button  className="loginRegisterButton">
+        <div className="loginRight1">
+          <div className='reg-text'>
+            <p className='reg-p1'>START FOR FREE</p>
+          <h1 className='reg-head'>Log in</h1>
+          <p className='reg-p2'>Not a member?<span className='reg-span'>Sign up</span></p>
+          </div>
+        <div className="loginBox1">
+            <label className='login-label1'>Email</label>
+            <input onChange={handleForm} placeholder="Email" name='email'  type="email"  required className="loginInput1" />
+            <label className='login-label2'>Password</label>
+            <input onChange={handleForm} placeholder="Password" name='password' type="password" className="loginInput1" />
+            <button onClick={()=>handleSubmit()} className="loginButton1">Log In</button>
+            
+            <button  className="loginRegisterButton1">
               Create a New Account
             </button>
           </div>

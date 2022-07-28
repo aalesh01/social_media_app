@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { FormControl,FormLabel,Input,FormHelperText, Button,Heading} from '@chakra-ui/react';
 import './createpost.css'
+import { sliderClasses } from '@mui/material';
 
 const CreatePost = () => {
   
-    const [user,setUser]=useState({"like_count":0});
+    const [user,setUser]=useState({"like_count":0, "date":new Date().toISOString().slice(0,10),"comments":[]});
     
     const handleForm= (e) => {
         const { name, value } = e.target;

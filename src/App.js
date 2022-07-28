@@ -1,10 +1,10 @@
 import './App.css';
+import Signup from './components/LoginNsignup/signup';
 import CreatePost from './components/post /createpost';
 import NavBar from './components/navbar/NavBar';
 import Homepage from './components/home/homepage';
 import {Routes, Route}  from 'react-router-dom';
 import Login from './components/LoginNsignup/login';
-import Signup from './components/LoginNsignup/signup';
 import { AuthContext } from './components/contextAPI/authContext';
 import React from 'react';
 
@@ -23,8 +23,10 @@ function App() {
         <Route path='/post' element={<CreatePost/>} />
         {/* <Route path='/profile' element={<Profile/>} */}
       </Routes>
+  
     </div>
   );
 }
+
 
 export default App;

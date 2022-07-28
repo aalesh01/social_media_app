@@ -6,8 +6,8 @@ const AuthContextBox = ({ children }) => {
 
     const [isAuth, setIsAuth] = React.useState(false);
     
-    const toggleAuth = () => {
-        setIsAuth(!isAuth);
+    const toggleAuth = (flag) => {
+        setIsAuth(flag);
     }
 
     return (
