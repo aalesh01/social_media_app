@@ -177,6 +177,7 @@
       flex-direction: column;
       justify-content: space-between;
       margin-bottom: 500px;
+      z-index: 1;
   }
 
 

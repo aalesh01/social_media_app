@@ -1,6 +1,26 @@
 {
   "users": [
     {
+      "name": "Srujami",
+      "email": "srujami@gmail.com",
+      "password": "1234567890",
+      "phone": "1234567890",
+      "dob": "2022-06-28",
+      "gender": "Male",
+      "id": 6,
+      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80"
+    },
+    {
+      "name": "sudeshna",
+      "email": "sudeshna@gmail.com",
+      "password": "123456",
+      "phone": "876876",
+      "gender": "female",
+      "dob": "2022-07-15",
+      "image": "https://media-exp1.licdn.com/dms/image/C5603AQF27MgOZz93WA/profile-displayphoto-shrink_100_100/0/1633719464380?e=1664409600&v=beta&t=pMuuFthHhAQ9Qk6Go7AmY8HBDNBu6ksHcrDiPzEfg4o\"",
+      "id": 8
+    },
+    {
       "name": "srujami",
       "email": "srujami@gmail.com",
       "password": "1234567890",
@@ -29,15 +49,111 @@
       "dob": "1999-04-27",
       "image": "https://unsplash.com/photos/bqe0J0b26RQ",
       "id": 9
+    },
+    {
+      "name": "aditya",
+      "email": "aditya@gmail.com",
+      "password": "12345",
+      "phone": "1234567890",
+      "gender": "male",
+      "dob": "2022-07-15",
+      "image": "https://images.unsplash.com/photo-1609846685336-9cb06880bb48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "id": 10
     }
   ],
   "posts": [
     {
-      "like_count": 0,
+      "like_count": 5,
       "name": "Srujami",
       "image": "https://picsum.photos/200/300",
       "text": "Enjoyed visiting here..",
       "id": 1,
+      "date": "",
+      "comments": [
+        "Nice Picture",
+        "WOOOOWWWW!!",
+        "hi",
+        "heyyy"
+      ]
+    },
+    {
+      "like_count": 0,
+      "name": "Aalesh",
+      "image": "https://picsum.photos/200/300",
+      "text": "Enjoyed visiting here..",
+      "id": 2,
+      "date": "",
+      "comments": [
+        "Nice Picture",
+        "WOOOOWWWW!!"
+      ]
+    },
+    {
+      "like_count": 0,
+      "name": "Aalesh",
+      "image": "https://picsum.photos/200/300",
+      "text": "Enjoyed visiting here..",
+      "id": 3,
+      "date": "",
+      "comments": [
+        "Nice Picture",
+        "WOOOOWWWW!!"
+      ]
+    },
+    {
+      "like_count": 0,
+      "name": "Aalesh",
+      "image": "https://picsum.photos/200/300",
+      "text": "Enjoyed visiting here..",
+      "id": 4,
+      "date": "",
+      "comments": [
+        "Nice Picture",
+        "WOOOOWWWW!!"
+      ]
+    },
+    {
+      "like_count": 0,
+      "name": "Aalesh",
+      "image": "https://picsum.photos/200/300",
+      "text": "Enjoyed visiting here..",
+      "id": 5,
+      "date": "",
+      "comments": [
+        "Nice Picture",
+        "WOOOOWWWW!!"
+      ]
+    },
+    {
+      "like_count": 0,
+      "name": "Aalesh",
+      "image": "https://picsum.photos/200/300",
+      "text": "Enjoyed visiting here..",
+      "id": 6,
+      "date": "",
+      "comments": [
+        "Nice Picture",
+        "WOOOOWWWW!!"
+      ]
+    },
+    {
+      "like_count": 0,
+      "name": "Aalesh",
+      "image": "https://picsum.photos/200/300",
+      "text": "Enjoyed visiting here..",
+      "id": 7,
+      "date": "",
+      "comments": [
+        "Nice Picture",
+        "WOOOOWWWW!!"
+      ]
+    },
+    {
+      "like_count": 0,
+      "name": "Aalesh",
+      "image": "https://picsum.photos/200/300",
+      "text": "Enjoyed visiting here..",
+      "id": 8,
       "date": "",
       "comments": [
         "Nice Picture",
@@ -50,6 +166,18 @@
       "image": "https://picsum.photos/200/300",
       "text": "Enjoyed visiting here..",
       "id": 2,
+      "date": "",
+      "comments": [
+        "Nice Picture",
+        "WOOOOWWWW!!"
+      ]
+    },
+    {
+      "like_count": 0,
+      "name": "Aalesh",
+      "image": "https://picsum.photos/200/300",
+      "text": "Enjoyed visiting here..",
+      "id": 9,
       "date": "",
       "comments": [
         "Nice Picture",

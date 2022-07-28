@@ -1,47 +1,44 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate }  from 'react-router-dom';
-import Signup from './signup';
+import { Link, useNavigate }  from 'react-router-dom';
+import { AuthContext } from '../contextAPI/authContext';
+import registration from "../LoginNsignup/registration_photo.png"
 
 import "./login.css"
-import profile from "./uid.png"
-import registration from "../LoginNsignup/registration_photo.png"
 const Login = () => {
-  const [user , setUser] = useState([]);
-  const [loginUser,setLoginUser] = useState({});
+
+  const [user , setUser] = React.useState([]);
+  const [loginUser,setLoginUser] = React.useState({});
+
   let navigate=useNavigate();
-   
+  
+  const { toggleAuth, isAuth, handleIsAuth } = React.useContext(AuthContext);
+  
+
   useEffect(()=>{
-    localStorage.setItem('isuser',loginUser);
-  },[]);
-
-
-   
-
-  useEffect( ()=>{
        fetch(`http://localhost:8080/users`)
        .then (res=>res.json())
        .then (res=>setUser(res))
-       console.log(user);
   }, []);
 
   const handleForm= (e) => {
     const { name, value } = e.target;
     setLoginUser({...loginUser,[name]: value});
-    
 }
 
   const handleSubmit =  () => {
       user.forEach(ele=>{
          if(ele.email===loginUser.email && ele.password===loginUser.password){
+          toggleAuth(true);
+          console.log(isAuth)
           alert("Sign in Successfull");
           localStorage.setItem("loginedUser",ele.name)
           navigate('/');
          }
-          else{ 
-            // alert("Invalid user");
-        }
       })
-      
+      // if(isAuth===false){
+      //   alert('Invalid User')
+
+      // }
   }
   return (
     <div className='login1'>
@@ -57,18 +54,17 @@ const Login = () => {
           <h1 className='reg-head'>Log in</h1>
           <p className='reg-p2'>Not a member?<span className='reg-span'>Sign up</span></p>
           </div>
-        <div className="loginBox1">
+        <form className="loginBox1">
             <label className='login-label1'>Email</label>
-            <input onChange={handleForm} placeholder="Email" name='email'  type="email"  required className="loginInput1" />
+            <input required onChange={handleForm} placeholder="Email" name='email'  type="email"   className="loginInput1" />
             <label className='login-label2'>Password</label>
-            <input onChange={handleForm} placeholder="Password" name='password' type="password" className="loginInput1" />
+            <input required onChange={handleForm} placeholder="Password" name='password' type="password" className="loginInput1" />
             <button onClick={()=>handleSubmit()} className="loginButton1">Log In</button>
             
-            <button  className="loginRegisterButton1">
+            <Link to="/signup"><button  className="loginRegisterButton1">
               Create a New Account
-            </button>
-            <span className="loginForgot1">Forgot Password?</span>
-          </div>
+            </button></Link>
+          </form>
         </div>
       </div>
     </div>

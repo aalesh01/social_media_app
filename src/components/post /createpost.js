@@ -15,11 +15,11 @@ const CreatePost = () => {
     const handleSubmit = async (event) => {
         console.log(user)
         await fetch(`http://localhost:3000/posts`, {
-            method: "PATCH",
+            method: "POST",
             body: JSON.stringify(user),
             headers: { "content-type": "application/json" }
         })
-        alert("Login Successfull");
+        alert("Posted");
     }
 
 
