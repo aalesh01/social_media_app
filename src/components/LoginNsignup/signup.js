@@ -57,7 +57,7 @@ const Signup = () =>{
             </div>
             </div>
 
-            <div className='input-fields'>
+            <form className='input-fields'>
 
             <label>Name</label>
             <input onChange={handleForm} placeholder="Fullname" type="text" name='name' className="loginInput" />
@@ -75,10 +75,8 @@ const Signup = () =>{
             <input onChange={handleForm} placeholder='Insert your image url' name='image' className='loginInput'/>
 
             <button onClick={()=>handleSubmit()} className="loginButton2">Sign Up</button>
-            <button  className="loginRegisterButton2">
-            Log in
-            </button> 
-            </div>
+            
+            </form>
             
           </div>
         </div>

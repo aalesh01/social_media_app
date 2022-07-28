@@ -4,17 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
-import {ChakraProvider } from '@chakra-ui/react';
-
+import {ChakraProvider,theme} from '@chakra-ui/react';
+import AuthContextBox from './components/contextAPI/authContext';
+// import theme from '@chakra-ui/react';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <ChakraProvider resetCSS={true}>
-   
-    <App />
-    
+  <ChakraProvider resetCSS={true} theme={theme}>
+  <AuthContextBox > 
+  <App />
+  </AuthContextBox>
   </ChakraProvider>
   </BrowserRouter>
   

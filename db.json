@@ -13,11 +13,11 @@
     {
       "name": "sudeshna",
       "email": "sudeshna@gmail.com",
-      "password": "657765",
+      "password": "123456",
       "phone": "876876",
       "gender": "female",
       "dob": "2022-07-15",
-      "image": "https://media-exp1.licdn.com/dms/image/C5603AQF27MgOZz93WA/profile-displayphoto-shrink_100_100/0/1633719464380?e=1664409600&v=beta&t=pMuuFthHhAQ9Qk6Go7AmY8HBDNBu6ksHcrDiPzEfg4o\"",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
       "id": 8
     },
     {
@@ -45,18 +45,20 @@
   "posts": [
     {
       "name": "Aalesh",
-      "like_count": 330,
+      "like_count": 340,
       "text": "Just Telling",
       "image": "https://picsum.photos/200/300",
       "id": 1,
       "date": "25th July 2022",
       "comments": [
         "Amazing",
-        "jghjghjjh"
+        "jghjghjjh",
+        "good",
+        "hello"
       ]
     },
     {
-      "like_count": 1,
+      "like_count": 5,
       "name": "Shreyas Deshmukh",
       "image": "https://images.unsplash.com/photo-1514416497375-12bed6955a25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1536&q=80",
       "text": "Zindagi Na Milegi Dobara",

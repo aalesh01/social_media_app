@@ -7,12 +7,69 @@ function Profile() {
     const [posts, setPosts] = useState([]);
     const [userPosts,setUserPosts]= useState([]);
 
+
+    const[todos, setTodos]= useState(()=>{
+        const savedTodos = localStorage.getItem("todos");
+        if(savedTodos){
+            return JSON.parse(savedTodos);
+        }else{
+            return[];
+        }
+    });
+
+    const [todo, setTodo] = useState("");
+    const [isEditing, setIsEditing] = useState(false);
+    const [currentTodo, setCurrentTodo] = useState({});
+
+
+    useEffect (() =>{
+        localStorage.setItem("todos", JSON.stringify(todos));
+    },[todos]);
+
+
+
+    function handleInputChange(e){
+        setCurrentTodo(e.target.value);
+    }
+
+
+function handleEditInputChange(e)
+{
+    setCurrentTodo({...currentTodo, text: e.target.value});
+    console.log(currentTodo);
+}
+
+function handleFormSubmit(e){
+    e.preventDefault();
+
+    if(todo !== ""){
+        setTodos([
+            ...todos,
+            {
+                id: todos.length +1,
+                text: todo.trim()
+            }
+        ]);
+    }
+    setTodo("");
+}
+
+
+
+
+
     useEffect(() => {
         fetch('http://localhost:8080/users')
         .then(res => res.json())
         .then(data => { 
             console.log("DATA: ",data);
             return setFetchedValue(data);
+        });
+        fetch(`http://localhost:8080/posts`)
+        .then(res => res.json())
+        .then(res=>{
+            setPosts(res);
+            console.log(posts);
         })
     },[])
 
@@ -42,7 +99,7 @@ function Profile() {
     
     
     useEffect(() => {
-        fetchedValue && setUserdata(fetchedValue.find(v => v.name === "Srujami"));
+        fetchedValue && setUserdata(fetchedValue.find(v => v.name === localStorage.getItem("loginedUser")));
         // console.log("USERDATA: ",userdata);
     }, [fetchedValue, userdata])
     
