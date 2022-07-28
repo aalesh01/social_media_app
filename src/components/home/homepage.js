@@ -62,7 +62,7 @@ export default function Homepage() {
       {
         posts.map(ele=>(
           <>
-          <Card key={ele.id} title={ele.name} src ={ele.image} description={ele.text} likes ={ele.like_count}
+          <Card key={ele.id} title={ele.name} src ={ele.image} description={ele.text} likes ={ele.like_count} id={ele.id}
           />
           <div className='comment-div'>
             <input className='input-comment' onChange={handleForm} name='comment' placeholder='add a comment' type="text" />

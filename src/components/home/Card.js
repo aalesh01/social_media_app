@@ -36,15 +36,15 @@ import './Card.css';
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ "like_count": likeCount })
         };
-        fetch('http://localhost:/posts/'+id, requestOptions)
+        fetch('http://localhost:8080/posts/'+id, requestOptions)
             .then(response => response.json())
-            .then(data => console.log(data.id));
+            .then(data => console.log(data.like_count));
     }, [likeCount])
     
  
   const fetchData = () => {
     setLikeCount(likeCount + 1);
-    console.log(likeCount);
+    
   }
 
   
