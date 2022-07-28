@@ -10,9 +10,9 @@ export default function Homepage() {
     
  
   useEffect(()=>{
-       fetch(`http://localhost:8080/posts`)
-       .then (res=>res.json())
-       .then (res=>setPosts(res))
+       fetch(`http://localhost:3000/posts`)
+       .then(res=>res.json())
+       .then(data=>setPosts(data))
        console.log(posts);
   }, []);
   
@@ -45,7 +45,7 @@ export default function Homepage() {
     <div className='home-card'>
       {
         posts.map(ele=>(
-          <Card title={ele.name} img src ={ele.image} description={ele.text}/>
+          <Card title={ele.name} src ={ele.image} description={ele.text} likes={ele.like_count} id={ele.id}/>
         ))
       }
       

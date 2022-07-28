@@ -13,8 +13,8 @@ const CreatePost = () => {
 
     const handleSubmit = async (event) => {
         console.log(user)
-        await fetch(`http://localhost:8080/posts`, {
-            method: "POST",
+        await fetch(`http://localhost:3000/posts`, {
+            method: "PATCH",
             body: JSON.stringify(user),
             headers: { "content-type": "application/json" }
         })
