@@ -34,6 +34,7 @@ const Login = () => {
       user.forEach(ele=>{
          if(ele.email===loginUser.email && ele.password===loginUser.password){
           alert("Sign in Successfull");
+          localStorage.setItem("loginedUser",ele.name)
           navigate('/');
          }
           else{ 
