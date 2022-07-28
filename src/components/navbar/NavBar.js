@@ -38,8 +38,8 @@ function NavBar() {
                     {isAuth ? <button onClick={()=>toggleAuth(false)} className='log-btn'>Logout</button>: <button className='log-btn'>Login</button> }
                     </Link></span>
                 
-               
-              <img className='nav-dp' src={localStorage.getItem("dp")}></img>
+            
+            { isAuth  ? <img className='nav-dp' src={localStorage.getItem("dp")} /> : null }
              
              </div>
         </div>

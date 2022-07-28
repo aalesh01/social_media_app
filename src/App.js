@@ -22,7 +22,7 @@ function App() {
         <Route path="/signup" element={<Signup/>}/>
         <Route path='/' element={isAuth ? <Homepage/> : <Login />}/> 
         <Route path='/post' element={<CreatePost/>} />
-        <Route path='/profile' element={isAuth ? <Profile/> : null} />
+        <Route path='/profile' element={ <Profile/> } />
       </Routes>
     </div>
   );

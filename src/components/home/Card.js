@@ -42,7 +42,6 @@ export default function Card({ src, title, description, likes, id }) {
 
   const fetchData = () => {
     setLikeCount(likeCount + 1);
-
   }
 
 

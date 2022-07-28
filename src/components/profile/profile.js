@@ -11,46 +11,44 @@ function Profile() {
 
 
     useEffect(() => {
+        getPosts();
         fetch('http://localhost:8080/users')
             .then(res => res.json())
             .then(data => {
                 console.log("DATA: ", data);
                 return setFetchedValue(data);
             });
-        fetch(`http://localhost:8080/posts`)
-            .then(res => res.json())
-            .then(res => {
-                setPosts(res);
-                console.log(posts);
-            })
     }, [])
 
-    // posts.map(ele=>{
-    //     if(ele.name === userdata.name){
-    //       setUserPosts([...userPosts,ele])
-    //     }
-    // })
+    
+        const getPosts= async()=>{
+            await fetch(`http://localhost:8080/users`)
+            .then(res => res.json())
+            .then(res => { setPosts(res);
+            console.log(posts)
+            })
+        } 
 
-    // useEffect(()=>{
-    //     fetch('http://localhost:8080/posts')
-    //     .then(res => res.json())
-    //     .then(res=>{
-    //         setPosts(res);
-    //         console.log(posts);
-    //     })
+      
     // },[])
 
-    // posts.forEach(ele=>{
-    //     if(ele.name===userdata.name){
-    //       setUserPosts([...userPosts,ele])
-    //     }
-    // })
+    useEffect(()=>{
+        posts && posts.map(ele=>{
+            if(ele.name === userdata.name)
+            setUserPosts([...userPosts,ele])
+          
+      })
+    },[])
 
+
+    
     useEffect(() => {
         fetchedValue && setUserdata(fetchedValue.find(v => v.name === localStorage.getItem("loginedUser")));
         userdata &&  localStorage.setItem("dp", userdata.image);
    
     }, [fetchedValue, userdata])
+
+
 
     return (
 
@@ -76,11 +74,11 @@ function Profile() {
                 </div>
                 <div className='allCards'>
                     {
-                        userPosts.map(ele => (
+                        userPosts && userPosts.map(ele => {
                             <div className='Card'>
                                 <img id='profile-image' src={ele.image} />
                             </div>
-                        )
+                        }
                         )
                     }
                 </div>
