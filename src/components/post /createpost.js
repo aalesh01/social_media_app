@@ -19,7 +19,7 @@ const CreatePost = () => {
             body: JSON.stringify(user),
             headers: { "content-type": "application/json" }
         })
-        alert("Login Successfull");
+        alert("Posted");
     }
 
 

@@ -44,4 +44,13 @@ part+ sampradha --> profile page;
 
 
 
-to kill a port:-  kill $(lsof -t -i:8080)
+to kill a port:-  kill $(lsof -cardt -i:8080)
+
+2nd Day tasks..
+
+1. isAuth toggle     -> aalesh
+3. like count logic  -> sampradha
+4. profile css        -> srujami
+5. popup for create post.js   -> aditya and shreyas
+6  homepage card css and heart button -> shreyas
+

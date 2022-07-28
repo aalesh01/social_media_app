@@ -1,47 +1,40 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate }  from 'react-router-dom';
-import Signup from './signup';
+import { AuthContext } from '../contextAPI/authContext';
+import registration from "../LoginNsignup/registration_photo.png"
 
 import "./login.css"
-import profile from "./uid.png"
-import registration from "../LoginNsignup/registration_photo.png"
 const Login = () => {
-  const [user , setUser] = useState([]);
-  const [loginUser,setLoginUser] = useState({});
+
+  const [user , setUser] = React.useState([]);
+  const [loginUser,setLoginUser] = React.useState({});
+
   let navigate=useNavigate();
-   
+  
+  const { toggleAuth, isAuth, handleIsAuth } = React.useContext(AuthContext);
+  
+
   useEffect(()=>{
-    localStorage.setItem('isuser',loginUser);
-  },[]);
-
-
-   
-
-  useEffect( ()=>{
        fetch(`http://localhost:8080/users`)
        .then (res=>res.json())
        .then (res=>setUser(res))
-       console.log(user);
   }, []);
 
   const handleForm= (e) => {
     const { name, value } = e.target;
     setLoginUser({...loginUser,[name]: value});
-    
 }
 
   const handleSubmit =  () => {
       user.forEach(ele=>{
          if(ele.email===loginUser.email && ele.password===loginUser.password){
+          toggleAuth(true);
+          console.log(isAuth)
           alert("Sign in Successfull");
           localStorage.setItem("loginedUser",ele.name)
           navigate('/');
          }
-          else{ 
-            // alert("Invalid user");
-        }
       })
-      
   }
   return (
     <div className='login1'>
@@ -67,7 +60,6 @@ const Login = () => {
             <button  className="loginRegisterButton1">
               Create a New Account
             </button>
-            <span className="loginForgot1">Forgot Password?</span>
           </div>
         </div>
       </div>
