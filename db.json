@@ -44,10 +44,10 @@
   ],
   "posts": [
     {
-      "like_count": 0,
-      "name": "Aalesh Patil",
+      "name": "Aalesh",
+      "like_count": 49,
+      "text": "Just Telling",
       "image": "https://picsum.photos/200/300",
-      "text": "Enjoyed visiting here..",
       "id": 1,
       "date": "",
       "comments": [

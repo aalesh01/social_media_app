@@ -7,6 +7,7 @@ import {Routes, Route}  from 'react-router-dom';
 import Login from './components/LoginNsignup/login';
 import { AuthContext } from './components/contextAPI/authContext';
 import React from 'react';
+import Profile from './components/profile/profile';
 
 function App() {
    
@@ -21,7 +22,7 @@ function App() {
         <Route path="/signup" element={<Signup/>}/>
         <Route path='/' element={isAuth ? <Homepage/> : <Login />}/> 
         <Route path='/post' element={<CreatePost/>} />
-        {/* <Route path='/profile' element={<Profile/>} */}
+        <Route path='/profile' element={isAuth ? <Profile/> : alert("Please login")} />
       </Routes>
   
     </div>
